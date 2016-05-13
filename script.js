@@ -6,17 +6,17 @@ var app = angular.module("ourApp", ["ngRoute"]);
 			controller: "homeController",
 			templateUrl: "partials/landing.html"
 		})
-		.when("/input"
+		.when("/input",
 		{
 			controller: "inputController",
 			templateUrl: "partials/input.html"
 		})
-		.when("/output"
+		.when("/output",
 		{
 			controller: "outputController",
 			templateUrl: "partials/output.html"
 		})
-		.when("/api"
+		.when("/api",
 		{
 			controller: "apiController",
 			templateUrl: "partials/api.html"
