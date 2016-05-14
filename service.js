@@ -1,8 +1,8 @@
 var app = angular.module("ourApp");
 
-app.factory("appService", function($http){
-	var palindrome = "";
-	function getPalindrome(str){
+app.factory("appService", function(){
+	var str = "";
+	function getPalindrome(){
 		var revPalindrome = str.toLowerCase("").split("").reverse().join("");
 		if (str === revPalindrome){
 			return true;
@@ -14,7 +14,8 @@ app.factory("appService", function($http){
 
 	return {
 		palindromeReveal: function(word){
-			palindrome: word;
-		}
+			str = word
+		},
+		getPalindrome: getPalindrome
 	};
 });
