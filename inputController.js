@@ -7,10 +7,3 @@ app.controller("inputController", function($scope, appService, $location){
 	};
 });
 
-
-
-
-// $scope.Palindrome = function() {
-//     var str = $scope.palitext;
-//     return str == str.split('').reverse().join('');
-// }
