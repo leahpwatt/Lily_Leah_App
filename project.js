@@ -1,6 +1,8 @@
 var app = angular.module("ourApp");
 	app.directive("project", function(){
 		return {
-			restrict:
-		};
-	});
+			restrict: "E",
+			templateUrl: "partials/api.html",
+			scope: true
+	};
+});
