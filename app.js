@@ -12,12 +12,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: '/partials/home.html'
         
     })
-    .state('about', {
-        url: '/about',
-        templateUrl: '/partials/about.html'
-
-    })
-
+  
     // nested list
     .state('home.input', {
         url: '/input',
@@ -43,10 +38,12 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         
     })
 
-    // nested list with just some random string data
-    
-    .state('home.paragraph', {
-        url: '/paragraph',
-        template: 'I could sure use a drink right now.'
+    .state('home.apiOutput', {
+        url: '/apiOutput',
+        templateUrl: '/partials/home-apiOutput.html',
+        controller: "apiOutputController"
+        
+        
     })
+
 });
