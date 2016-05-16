@@ -6,25 +6,25 @@
 <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
 <script src="app.js"></script>
 <script src="inputController.js"></script>
-
+<script src="outputController.js"></script>
+<script src="apiController.js"></script>
+<script src="service.js"></script>
+<script src="apiService.js"></script>
+<script src="project.js"></script>
 	<title>Lily and Leah's App</title>
 </head>
 <body ng-app="routerApp">
-
-<nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-        <a class="navbar-brand" ui-sref="#">Our App with UI Router</a>
-    </div>
-    <ul class="nav navbar-nav">
-        <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="about">About</a></li>
-    </ul>
-</nav>
-
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="navbar-header">
+	        <a class="navbar-brand" ui-sref="#">Our App with UI Router</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	        <li><a ui-sref="home">Home</a></li>
+	        <li><a ui-sref="about">About</a></li>
+	    </ul>
+	</nav>
 	<div class = "container">
-
 	<div ui-view></div>
-
 	</div>
 </body>
 </html>

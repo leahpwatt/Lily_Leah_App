@@ -7,11 +7,12 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         
         // HOME STATES AND NESTED VIEWS ========================================
-        .state('home', {
+    .state('home', {
         url: '/home',
         templateUrl: '/partials/home.html'
+        
     })
-        .state('about', {
+    .state('about', {
         url: '/about',
         templateUrl: '/partials/about.html'
 
@@ -20,14 +21,24 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     // nested list
     .state('home.input', {
         url: '/input',
-        templateUrl: '/partials/home-input.html'
+        templateUrl: '/partials/home-input.html',
+        controller: "inputController"
+        
+        
+    })
+
+     .state('home.output', {
+        url: '/output',
+        templateUrl: '/partials/home-output.html',
+        controller: "outputController"
         
         
     })
 
     .state('home.api', {
         url: '/api',
-        templateUrl: '/partials/home-api.html'
+        templateUrl: '/partials/home-api.html',
+        controller: "apiController"
         
         
     })
