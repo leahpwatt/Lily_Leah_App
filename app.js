@@ -18,7 +18,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
     })
 
     // nested list
-    .state('home.input', {
+    	.state('home.input', {
         url: '/input',
         templateUrl: '/partials/home-input.html'
         

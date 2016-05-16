@@ -1,6 +1,6 @@
-var app = angular.module("ourApp");
+var routerApp = angular.module("routerApp");
 
-app.controller("outputController", function($scope, appService){
+routerApp.controller("outputController", function($scope, appService){
 	$scope.word = appService.getPalindrome();
 
 });

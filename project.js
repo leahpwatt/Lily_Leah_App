@@ -1,5 +1,5 @@
-var app = angular.module("ourApp");
-	app.directive("project", function(){
+var routerApp = angular.module("routerApp");
+	routerApp.directive("project", function(){
 		return {
 			restrict: "E",
 			templateUrl: "partials/api.html",
