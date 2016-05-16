@@ -2,12 +2,12 @@ var app=angular.module("routerApp");
 
 app.controller("apiController", function($scope, apiService, $location){
 	$scope.getRandomQuotes = function(){
-		apiService.getRandomQuotes().then(function(data){
+		apiService.chooseRandomQuote($scope.wiseQuotes);
 		$location.path("home/apiOutput")
-		});
 	}
 
-		// console.log(data.data.quote);
-		// console.log(data.data.author);
-});
-
+	// apiService.getRandomQuotes().then(function(data){
+	// 	console.log(data.data.quote);
+	// 	console.log(data.data.author);
+	// });
+})
