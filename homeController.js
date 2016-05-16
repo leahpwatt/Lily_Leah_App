@@ -1,4 +1,4 @@
-var routerApp = angular.module("routerApp");
+var app = angular.module("routerApp");
 
-	routerApp.controller("homeController", function(){
+	app.controller("homeController", function(){
 	});

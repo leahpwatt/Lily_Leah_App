@@ -1,6 +1,6 @@
-var routerApp = angular.module("routerApp");
+var app = angular.module("routerApp");
 
-routerApp.factory("appService", function(){
+app.factory("appService", function(){
 	var str = "";
 	function getPalindrome(){
 		var revPalindrome = str.toLowerCase("").split("").reverse().join("");

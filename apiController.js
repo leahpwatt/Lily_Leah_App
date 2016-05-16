@@ -1,11 +1,9 @@
-var app=angular.module("ourApp");
+var app=angular.module("routerApp");
 
-app.controller("apiController", function($scope, apiService, $location){
+app.controller("apiController", function($scope, randomQuoteService, $location){
 	$scope.getRandomQuotes = function(){
-		apiService.chooseRandomQuote($scope.wiseQuotes);
+		randomQuoteService.chooseRandomQuote($scope.wiseQuotes);
 		$location.path("partials/api.html")
 	}
 
-});
-
-
+})

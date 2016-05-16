@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+<script src="app.js"></script>
+<script src="inputController.js"></script>
+
 	<title>Lily and Leah's App</title>
 </head>
 <body ng-app="routerApp">
-	<ul>
-		<li><a href="#/input">Enter a Palindrome</a></li>
-		<li><a href="#/output">Palindrome Results</a></li>
-		<li><a href="#/api">Random Quote Generator</a></li>
-		<li><a href="#/landing">Home</a></li>
-	</ul>
-	<div ng-view=""></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
-<script src="app.js"></script>
-<script src="inputController.js"></script>
-<script src="outputController.js"></script>
-<script src="apiController.js"></script>
-<script src="homeController.js"></script>
-<script src="project.js"></script>
-<script src="service.js"></script>
-<script src="apiService.js"></script>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Our App with UI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+    </ul>
+</nav>
+
+	<div class = "container">
+
+	<div ui-view></div>
+
+	</div>
 </body>
 </html>

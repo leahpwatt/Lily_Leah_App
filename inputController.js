@@ -1,6 +1,6 @@
-var routerApp = angular.module("routerApp");
+var app = angular.module("routerApp");
 
-routerApp.controller("inputController", function($scope, appService, $location){
+app.controller("inputController", function($scope, appService, $location){
 	$scope.getPalindrome = function(){
 		appService.palindromeReveal($scope.checkPalindrome);
 		$location.path("/output");
